@@ -1,8 +1,10 @@
 package com.zxn.phonygithub.di.component;
 
+import android.app.Application;
 import android.content.Context;
 
 import com.zxn.phonygithub.di.ApplicationContext;
+import com.zxn.phonygithub.di.module.ApplicationModule;
 
 import javax.inject.Singleton;
 
@@ -19,5 +21,6 @@ public interface ApplicationComponent {
     @ApplicationContext
     Context context();
 
+    Application application();
 
 }
